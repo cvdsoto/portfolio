@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2{
+  text-transform: uppercase;
+}
+
+header, footer{
+  background-color: #2a044a;
+  color: #93c2b1;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+}
