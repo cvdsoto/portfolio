@@ -79,7 +79,7 @@ h1{
 
 h2, h3{
   color: #93c2b1;
-  text-shadow: 0 0.1em #8789c4;
+  /* text-shadow: 0 0.1em #8789c4; */
   margin-bottom: 1em;
 }
 
