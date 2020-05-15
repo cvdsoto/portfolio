@@ -197,7 +197,7 @@ li {
 #toTop {
   display: none;
   position: absolute;
-  bottom: 27vh;
+  bottom: 25vh;
   right: 9vw;
   z-index: 99;
   border: none;
@@ -358,6 +358,10 @@ footer{
 
   h1 {
     font-size: 2.8em;
+  }
+
+  #toTop {
+    bottom: 15vh;
   }
 }
 
