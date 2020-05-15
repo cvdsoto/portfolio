@@ -9,6 +9,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #313185;
+  overflow-y: hidden;
 }
 
 a {
@@ -82,7 +83,7 @@ h1, h2, h3{
 
 h1{
   color: white;
-  font-size: 2.8em;
+  font-size: 2em;
   text-shadow: 0 0.1em #8789c4;
   letter-spacing: 0.2em;
 }
