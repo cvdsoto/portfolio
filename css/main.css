@@ -17,7 +17,7 @@ a {
 
 main {
   width: 90%;
-  height: 80vh;
+  height: 65vh;
   margin: auto;
   background-color: white;
   border: 2px solid black;
@@ -31,6 +31,7 @@ main {
 nav {
   padding-bottom: 1em;
   padding-top: 1em;
+  /* padding-left: 1.3em; */
   text-align: center;
   background-color: #F0A2AA;
   width: 90%;
@@ -42,10 +43,19 @@ nav {
   border-right: 2px solid black;
   border-top: 2px solid black;
   box-shadow: 10px 10px #222;
+  display: flex;
+  justify-content: center;
+}
+
+nav > * {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  flex: 1;
 }
 
 footer{
-  padding: .9em;
+  padding: 1em;
   height: 4em;
   text-align: center;
   box-sizing: border-box;
@@ -66,7 +76,7 @@ h1, h2, h3{
   padding-top: .5em;
   text-transform: uppercase;
   margin: 0;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   text-transform: uppercase;
 }
 
@@ -80,7 +90,6 @@ h1{
 h2, h3{
   color: #93c2b1;
   /* text-shadow: 0 0.1em #8789c4; */
-  margin-bottom: 1em;
 }
 
 h2{
@@ -99,11 +108,25 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
 }
 
 li {
-  width: 20%;
+  width: 30%;
   padding: 0 1em;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+#home {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-text {
+  order: 1;
   text-align: center;
 }
 
@@ -122,45 +145,45 @@ li {
   text-align: justify;
 }
 
-#works img {
+#home span {
   display: block;
-  margin: 1.5em auto;
-  width: 90%;
+  font-size: 2em;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: #313185;
 }
 
-.details, .w-item {
-  margin: 1em 0;
+#home p, #home span {
+  margin-bottom: .2em;
+}
+
+.about-text > p, .details > ul {
+  margin-top: 2em;
 }
 
 .skills-icons, .skills-react-icon {
   width: 100%;
 }
 
-.loves ul li, .hates ul li {
-  width: 30%;
-}
-
-.loves-icons, .hates-icons{
-  width: 50%;
-}
-
-.contact-container {
-  text-align: center;
-}
-
-.contact-container ul, .contact-icons {
+#about button {
   display: block;
-}
-
-.contact-container ul li {
+  margin: 2em auto;
   width: 50%;
-  margin: 2.5em auto;
-  text-align:center;
 }
 
-.contact-icons {
-  width: 80%;
+#works img {
+  display: block;
+  margin: 1.5em auto;
+  width: 90%;
 }
+
+#works div:first-of-type {
+  margin: 2em 0;
+}
+#works div:not(:first-of-type) {
+  margin: 4em 0;
+}
+
 
 /* header, footer{
   background-color: #2a044a;
@@ -169,9 +192,44 @@ li {
   text-transform: uppercase;
 } */
 
-@media (min-width: 960px){
+@media (min-width: 640px){
   main, footer, nav{
     max-width: 960px;
+  }
+
+  #home {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  #home h2, .headline-text {
+    text-align: left;
+  }
+
+  #home h2 {
+    font-size: 3em;
+  }
+
+  .headline-text{
+    padding-left: 2em;
+  }
+
+  #home .headline-name {
+    font-size: 2.5em;
+  }
+
+  #home .small {
+    font-size: .8em;
+  }
+
+  #home .headline-job {
+    font-size: 1.6em;
+  }
+
+  .avatar {
+    width: 35%;
+    margin: 1em;
   }
 
   #about {
@@ -180,27 +238,73 @@ li {
     justify-content: center;
   }
 
-  .avatar {
-    width: 45%;
-  }
-
-  .skills {
-    width: 100%;
-  }
-
-  .loves, .hates {
+  #about > * {
     width: 50%;
+    padding: 0 2em;
   }
 
-  .contact-container ul {
-    display: flex;
+  li {
+    width: 40%;
   }
 
   .skills-icons, .skills-react-icon {
-    width: 70%;
+    width: 80%;
   }
 
-  .loves-icons, .hates-icons, .contact-icons{
-    width: 40%;
+  .w-item > p {
+    padding: 0 3em;
+  }
+}
+
+@media (min-width: 960px){
+
+  #home {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  #home h2, .headline-text {
+    text-align: left;
+  }
+
+  #home h2 {
+    font-size: 3.5em;
+  }
+
+  .headline-text{
+    padding-left: 3em;
+  }
+
+  #home .headline-name {
+    font-size: 3em;
+  }
+
+  #home .small {
+    font-size: .8em;
+  }
+
+  #home .headline-job {
+    font-size: 2.1em;
+  }
+
+  .avatar {
+    width: 35%;
+    margin: 1em;
+  }
+
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #about > * {
+    width: 50%;
+    padding: 0 3em;
+  }
+
+  li {
+    width: 30%;
   }
 }

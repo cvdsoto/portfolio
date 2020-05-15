@@ -5,26 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Carmina Soto</title>
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header>
     <a href="index.html"><h1>Carmina Soto</h1></a>
     <nav>
-      <a href="about.html">About</a>
-      <a href="works.html">Works</a>
-      <a href="contact.html">Contact</a>
+      <!-- <div class="links"> -->
+        <a href="#about">About</a>
+        <a href="#works" class="work-link">Works</a>
+      <!-- </div> -->
+      <div class="socials">
+        <a href="mailto:cvdsoto@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/cvdsoto/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+        <a href="https://github.com/cvdsoto"><i class="fab fa-fw fa-github"></i></a>
+    </div>
     </nav>
   </header>
 
   <main>
     <div class="container">
     <section id="home">
-      <header>
+      <div class="headline-text">
         <h2>Hello!</h2>
-      </header>
+        <p>My name is </p><span class="headline-name">Carmina Soto</span>
+        <p>and I am a </p><span class="headline-job">front-end developer</span>
+      </div>
       <img src="img/carmina.jpg" class="avatar">
-      <p class="center">I'm Carmina Soto and I am a junior front-end developer.</p>
+    </section>
+
+    <section id="about">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="justify">Hello there! I am a former SAP Developer with a passion for design. Though I was not designing websites, I did my best to use my passion in design through creating reports, forms, and system enhancements. My goal now is to use these skills and be part of a team who values openness and collaboration to deliver aesthetically pleasing websites while using the best practices in code.</p>
+      </div>
+      <div class="details skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <img src="img/html_css.png" class="skills-icons">
+            <p>HTML/CSS</p>
+          </li>
+          <li>
+            <img src="img/js.png" class="skills-icons">
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img src="img/jquery.png" class="skills-icons">
+            <p>jQuery</p>
+          </li>
+          <li>
+            <img src="img/ror.png" class="skills-icons">
+            <p>Ruby on Rails</p>
+          </li>
+          <li>
+            <img src="img/react.png" class="skills-react-icon">
+            <p>React</p>
+          </li>
+        </ul>
+      </div>
+      <button type='submit' onClick="window.open('resume.pdf')">Download Resume</button>
+    </section>
+
+    <section id="works">
+      <h2>Works</h2>
+      <div class="w-item">
+        <h3>Recipe Finder!</h3>
+        <img src="img/recipefinder.png">
+        <p class="justify">I have created a recipe finder site, where you just put in the ingredients you have on hand and it will suggest recipes you can cook it with. This site was made using HTML, CSS, Javascript, React, and the <a href="https://developer.edamam.com/edamam-recipe-api">Edamam API</a>.</p>
+      </div>
+
+      <div class="w-item">
+        <h3>'RONA Symptom Tracker</h3>
+        <img src="img/rona.png">
+        <p class="justify">I was part of a group who developed a symptom tracker for people under quarantine. This site was created by using HTML, CSS, Bootstrap, and React.</p>
+      </div>
+
+      <div class="w-item">
+        <h3>Tic-tac-toe</h3>
+        <img src="img/rv_tictactoe.png">
+        <p class="justify">I made a Red Velvet-themed tic-tac-toe because of my current obsession with KPOP. This game was created using HTML, CSS, and Javascript (jQuery)</p>
+      </div>
+
+      <div class="w-item">
+        <h3>Ultimate Coron Experience</h3>
+        <img src="img/uce.png">
+        <p class="justify">I made a site for a travel agency that specializes in tours around Coron in the Philippines. It enables users to choose and reserve a tour with them. This site was created by using HTML, CSS, Bootstrap, Javascript, and Ruby on Rails.</p>
+      </div>
+
     </section>
   </div>
   </main>
