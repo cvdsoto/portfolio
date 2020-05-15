@@ -134,7 +134,7 @@ li {
 .avatar {
   display: block;
   width: 70%;
-  margin: 1em auto;
+  margin: -0.5em auto;
   border-radius: 50%;
 }
 
