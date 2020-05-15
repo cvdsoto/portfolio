@@ -194,15 +194,11 @@ li {
   margin: 4em 0;
 }
 
-/* .container {
-  position: relative;
-} */
-
 #toTop {
   display: none;
   position: absolute;
-  bottom: 7em;
-  right: 2em;
+  bottom: 15vh;
+  right: 9vw;
   z-index: 99;
   border: none;
   outline: none;
@@ -307,9 +303,9 @@ footer{
     padding: 0 3em;
   }
 
-  #toTop {
+  /* #toTop {
     right: 3em;
-  }
+  } */
 }
 
 @media (min-width: 960px){
@@ -342,8 +338,16 @@ footer{
     width: 30%;
   }
 
-  #toTop {
-    right: 4em;
+}
+@media (min-width: 1120px) {
+  #toTop{
+    right: 12vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  #toTop{
+    right: 23vw;
   }
 }
 
@@ -354,5 +358,17 @@ footer{
 
   h1 {
     font-size: 2.8em;
+  }
+}
+
+@media (min-height: 1024px){
+  #toTop {
+    bottom: 18vh;
+  }
+}
+
+@media (min-height: 1366px) {
+  #toTop {
+    bottom: 22vh;
   }
 }
