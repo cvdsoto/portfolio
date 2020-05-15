@@ -197,7 +197,7 @@ li {
 #toTop {
   display: none;
   position: absolute;
-  bottom: 15vh;
+  bottom: 30vh;
   right: 9vw;
   z-index: 99;
   border: none;
