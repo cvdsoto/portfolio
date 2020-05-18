@@ -197,8 +197,6 @@ li {
 #toTop {
   display: none;
   position: absolute;
-  /* bottom: 117px; */
-  /* right: 9vw; */
   z-index: 99;
   border: none;
   outline: none;
@@ -209,6 +207,11 @@ li {
   border-radius: 10px;
   font-size: 18px;
   opacity: 0.7;
+}
+
+#toTop .small {
+  font-size: .5em;
+  display: block;
 }
 
 #toTop:hover {
@@ -302,10 +305,6 @@ footer{
   .w-item > p {
     padding: 0 3em;
   }
-
-  /* #toTop {
-    right: 3em;
-  } */
 }
 
 @media (min-width: 960px){
@@ -339,17 +338,6 @@ footer{
   }
 
 }
-/* @media (min-width: 1120px) {
-  #toTop{
-    right: 12vw;
-  }
-}
-
-@media (min-width: 1280px) {
-  #toTop{
-    right: 23vw;
-  }
-} */
 
 @media (min-height: 800px) {
   main {
@@ -360,15 +348,3 @@ footer{
     font-size: 2.8em;
   }
 }
-/* 
-@media (min-height: 1024px){
-  #toTop {
-    bottom: 18vh;
-  }
-}
-
-@media (min-height: 1366px) {
-  #toTop {
-    bottom: 22vh;
-  }
-} */
