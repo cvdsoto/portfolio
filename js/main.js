@@ -11,7 +11,7 @@ nav.forEach(anchor => {
 });
 
 mybutton = document.getElementById("toTop");
-console.log('button', mybutton);
+// console.log('button', mybutton);
 
 // When the user scrolls down 20px from the top of the document, show the button
 main = document.getElementById("main");
@@ -34,13 +34,18 @@ function topFunction() {
   })
 }
 
-// window.addEventListener('resize', function(event){
-//   console.log('width', window.innerWidth);
-//   if (window.innerWidth > 1670) {
-//     mybutton.style.right = "5em";
-//   } else if (window.innerWidth > 1126) {
-//     mybutton.style.right = "6em";
-//   } else if (window.innerWidth > 1076){
-//     mybutton.style.right = "20em";
-//   }
-// })
+const topButton = function(w_width, m_width, w_height, m_height) {
+  const width = ((w_width - m_width) / 2) + 20;
+  const length = (w_height - m_height) + 80;
+  mybutton.style.right = width.toString() + 'px';
+  mybutton.style.bottom = length.toString() + 'px';
+}
+
+topButton(window.innerWidth, main.clientWidth, window.innerHeight, document.body.clientHeight);
+
+window.addEventListener('resize', function(event){
+  console.log('window height', window.innerHeight);
+  console.log('document length', document.body.clientHeight);
+  console.log('main length:', main.clientHeight);
+  topButton(window.innerWidth, main.clientWidth, window.innerHeight, document.body.clientHeight);
+})

@@ -197,8 +197,8 @@ li {
 #toTop {
   display: none;
   position: absolute;
-  bottom: 15vh;
-  right: 9vw;
+  /* bottom: 117px; */
+  /* right: 9vw; */
   z-index: 99;
   border: none;
   outline: none;
@@ -339,7 +339,7 @@ footer{
   }
 
 }
-@media (min-width: 1120px) {
+/* @media (min-width: 1120px) {
   #toTop{
     right: 12vw;
   }
@@ -349,7 +349,7 @@ footer{
   #toTop{
     right: 23vw;
   }
-}
+} */
 
 @media (min-height: 800px) {
   main {
@@ -360,7 +360,7 @@ footer{
     font-size: 2.8em;
   }
 }
-
+/* 
 @media (min-height: 1024px){
   #toTop {
     bottom: 18vh;
@@ -371,4 +371,4 @@ footer{
   #toTop {
     bottom: 22vh;
   }
-}
+} */
